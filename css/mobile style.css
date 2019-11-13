@@ -55,13 +55,19 @@ nav > ul > li > a:hover {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 2.5em;
+  top: 1.5em;
   border: 2px solid black;
   padding: 1em;
   background-color: darkred;
 }
+.torso:hover{
+  transition:1s linear;
+  background-color: rgb(245, 7, 138);
+  padding:2em;
+  font-size: 2em;
+}
 label {
-  background-color: rgb(6, 252, 6);
+  background-color:rgb(189, 252, 64);
   border: 2px solid black;
   border-radius: 2em;
   padding: 0.5em;
