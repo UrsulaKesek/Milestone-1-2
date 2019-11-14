@@ -4,12 +4,12 @@
 body {
   font-family: "Fira Sans", sans-serif;
   padding: 1rem;
-  background: rgb(247, 166, 4);
-  width: 100%;
+  background: beige;
+  width: 50%vpw;
 }
 .top > h1 {
-  border: 3px solid rgb(97, 1, 97);
-  background-color: rgb(146, 53, 146);
+  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
+  padding: 2em;
   color: white;
   text-align: center;
 }
@@ -24,9 +24,9 @@ nav > ul > li {
 
 nav > ul > li > a {
   display: flex;
-  background-color: rgb(146, 53, 146);
+  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
   border: 2px solid black;
-  padding: 1em;
+  padding: 0.5em;
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
   font-weight: 800;
@@ -36,7 +36,7 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-  color: rgb(4, 248, 33);
+  color: rgb(247, 7, 227);
   font-size: 2em;
   transition: color 0.1s linear;
 }
@@ -49,7 +49,30 @@ nav > ul > li > a:hover {
   color: white;
   text-align: center;
   width: 50%;
+  padding: 0.75em;
+}
+.styles {
+  height: 35em;
+}
+h2 {
+  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
   padding: 1em;
+  color: white;
+}
+ol {
+  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
+  padding: 2em;
+  list-style-type: none;
+}
+ol > li > a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+h2 :hover {
+  color: rgb(247, 7, 227);
+  font-size: 1.25em;
+  transition: color 0s linear;
 }
 .torso {
   display: flex;
@@ -57,26 +80,101 @@ nav > ul > li > a:hover {
   position: relative;
   top: 1.5em;
   border: 2px solid black;
-  padding: 1em;
+  padding: 1.5em;
   background-color: darkred;
 }
-.torso:hover{
-  transition:1s linear;
-  background-color: rgb(245, 7, 138);
-  padding:2em;
+.torso:hover {
+  transition: 1s linear;
+  background: linear-gradient(135deg, rgb(245, 7, 138) 0%, rgb(7, 7, 240) 100%);
+  border-radius: 100%;
+  padding: 2.2em;
   font-size: 2em;
 }
 label {
-  background-color:rgb(189, 252, 64);
+  background-color: rgb(245, 225, 8);
   border: 2px solid black;
   border-radius: 2em;
   padding: 0.5em;
 }
-.button {
+.armhole {
+  display: flex;
+  height: 44em;
+}
+.armhole p {
+  border: 3px solid rgb(97, 1, 97);
   background-color: darkred;
+  color: white;
+  text-align: center;
+  width: 50%;
+  padding: 0.75em;
+}
+.armhole .torso:hover {
+  transition: 1s linear;
+  background: linear-gradient(135deg, rgb(245, 7, 138) 0%, rgb(7, 7, 240) 100%);
+  border-radius: 100%;
+  padding: 2.8em;
+  font-size: 2em;
+}
+.sleeve {
+  height: 68em;
+  display: flex;
+  justify-content: space-around;
+}
+.sleeve2 {
+  height: 70em;
+  display: flex;
+  justify-content: space-around;
+}
+p a {
+  text-decoration: none;
+  color: white;
+}
+.sleeve p {
+  border: 3px solid rgb(97, 1, 97);
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  width: 50%;
+  padding: 1.25em;
+}
+.sleeve2 p {
+  border: 3px solid rgb(97, 1, 97);
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  width: 50%;
+  padding: 1.25em;
+}
+
+.sleeve .torso:hover {
+  transition: 1s linear;
+  background: linear-gradient(
+    135deg,
+    rgb(247, 189, 153) 0%,
+    rgb(7, 236, 240) 100%
+  );
+  border-radius: 100%;
+  padding: 3.2em;
+  font-size: 2em;
+}
+.sleeve2 .torso:hover {
+  transition: 1s linear;
+  background: linear-gradient(
+    135deg,
+    rgb(247, 189, 153) 0%,
+    rgb(7, 236, 240) 100%
+  );
+  border-radius: 100%;
+  padding: 3.2em;
+  font-size: 2em;
+}
+
+.button {
+  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
   padding: 1em;
   border: 2px solid black;
   border-radius: 1em;
+  text-decoration: none;
   font-size: 1.5em;
   color: white;
 }
