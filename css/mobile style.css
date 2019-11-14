@@ -77,24 +77,32 @@ h2 :hover {
 .torso {
   display: flex;
   flex-direction: column;
+  height: 30em;
   position: relative;
   top: 1.5em;
   border: 2px solid black;
-  padding: 1.5em;
+  padding: 2em;
   background-color: darkred;
 }
 .torso:hover {
   transition: 1s linear;
   background: linear-gradient(135deg, rgb(245, 7, 138) 0%, rgb(7, 7, 240) 100%);
   border-radius: 100%;
-  padding: 2.2em;
+  padding: 2.7em;
   font-size: 2em;
 }
-label {
+.shapes {
+  flex-direction: column;
+  position: relative;
+  top: 1em;
+  height: 9em;
+}
+.shapes label {
   background-color: rgb(245, 225, 8);
-  border: 2px solid black;
-  border-radius: 2em;
+  border: 0.25em solid black;
+  border-radius: 1em;
   padding: 0.5em;
+  color: black;
 }
 .armhole {
   display: flex;
@@ -116,14 +124,15 @@ label {
   font-size: 2em;
 }
 .sleeve {
-  height: 68em;
+  height: 42em;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 }
+
 .sleeve2 {
-  height: 70em;
+  height: 34em;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 }
 p a {
   text-decoration: none;
@@ -145,30 +154,58 @@ p a {
   width: 50%;
   padding: 1.25em;
 }
-
-.sleeve .torso:hover {
+.arm {
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  position: relative;
+  top: 1.5em;
+  border: 2px solid black;
+  padding: 1em;
+  background-color: orange;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+.sleeve .arm:hover {
   transition: 1s linear;
   background: linear-gradient(
     135deg,
     rgb(247, 189, 153) 0%,
+    rgb(241, 221, 70) 35%,
     rgb(7, 236, 240) 100%
   );
-  border-radius: 100%;
-  padding: 3.2em;
-  font-size: 2em;
+  padding: 3.5em;
+  font-size: 1.5em;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  border-radius: 50%;
+  height: 30em;
 }
-.sleeve2 .torso:hover {
+
+.sleeve2 .arm:hover {
   transition: 1s linear;
   background: linear-gradient(
     135deg,
     rgb(247, 189, 153) 0%,
+    rgb(241, 221, 70) 35%,
     rgb(7, 236, 240) 100%
   );
-  border-radius: 100%;
-  padding: 3.2em;
-  font-size: 2em;
+  padding: 3.5em;
+  font-size: 1.5em;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  border-radius: 50%;
+  height: 30em;
 }
-
+.sleevebutton {
+  height: 4em;
+}
 .button {
   background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
   padding: 1em;
