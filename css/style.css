@@ -45,14 +45,19 @@ nav > ul > li > a:hover {
   transition: color 0.1s linear;
 }
 ol {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: square;
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+  padding: 2em;
+  list-style-type: none;
+}
+ol > li > a {
+  font-size: 1.5em;
+  color: rgb(68, 2, 22);
   text-decoration: none;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  color: black;
 }
 
 .top {
@@ -60,6 +65,7 @@ ol {
   border: 2px solid black;
   padding: 1em;
 }
+
 h1 {
   background: black;
   border: 2px solid white;
@@ -88,7 +94,7 @@ h5 {
   color: white;
 }
 a.button {
-  background-color: rgb(250, 235, 69);
+  background-color: rgb(245, 150, 7);
   padding: 0.5em;
   color: black;
   font-size: 1.5em;
@@ -106,25 +112,71 @@ a.button {
   height: 4em;
   padding: 3em;
 }
+.butnext {
+  background-color: rgb(250, 235, 69);
+  padding: 0.5em;
+  color: black;
+  font-size: 1.5em;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+.arm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 20em;
+}
+a {
+  text-decoration: none;
+}
+.shapes label {
+  background-color: rgb(245, 225, 8);
+  border: 0.25em solid black;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: black;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+}
 .save {
-  background-color: black;
+  background-color: rgb(15, 245, 7);
   font-size: 1em;
   color: white;
   padding: 1em;
   cursor: pointer;
 }
 .submit {
-  background-color: black;
+  background-color: rgb(6, 238, 122);
   font-size: 1em;
   color: white;
   padding: 1em;
   cursor: pointer;
 }
 .styles {
-  border: 2px solid black;
+  border: 2px solid rgb(247, 169, 2);
   padding: 1em;
   margin: 0.5em;
-  height: 95em;
+  height: 32em;
+}
+.silhouette p,
+.armhole p,
+.sleeve p,
+.sleeve2 p,
+.neckline p,
+.column p,
+.measurements p {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+  color: white;
+  text-align: center;
+  padding: 0.75em;
 }
 
 .row {
@@ -178,10 +230,11 @@ input[type="number"] {
 }
 
 .neck {
-  border: 2px solid black;
+  display: flex;
+  border: 2px solid red;
   padding: 1em;
-  margin: 0.5em;
-  height: 138em;
+  margin: 0 auto;
+  height: 6em;
 }
 .necklines {
   width: 75%;
@@ -226,9 +279,11 @@ input[type="number"] {
   position: relative;
   left: 20em;
 }
-p {
+.top p {
   border: 2px solid maroon;
   background-color: rgb(250, 235, 69);
+  position: relative;
+  left: 25%;
   font-family: "Fira Sans", sans-serif;
   font-size: 1em;
   text-align: center;
@@ -265,7 +320,7 @@ textarea {
   background-color: paleturquoise;
   transition: 0.5s ease background-color;
   font-size: 1.5em;
-  color: black;
+  color: white;
   margin: 1em;
 }
 
@@ -275,4 +330,58 @@ textarea {
   height: 10em;
   padding: 0.5em 1em;
   margin: 1em;
+}
+.sleeve2button {
+  position: relative;
+  top: 7em;
+  left: 1em;
+  height: 3em;
+}
+.butbtt {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+}
+.choose {
+  height: 6em;
+}
+.click {
+  margin: 2em 0;
+  height: 10em;
+}
+
+.butst {
+  background-color: rgb(245, 150, 7);
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2em;
+  font-size: 1em;
+}
+
+.butfor {
+  background-color: rgb(250, 235, 69);
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2em;
+  font-size: 1em;
+  position: relative;
+  left: 4em;
+  top: 2em;
+}
+.butnext {
+  position: relative;
+  left: 10em;
 }
