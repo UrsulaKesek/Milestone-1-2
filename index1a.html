@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,18 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="css/style.css" media="screen" />
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/mobile style.css" media="screen and (max-width:600px") />
+  <link rel="stylesheet" href="css/style.css" media="screen and (min-width:601px")/>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet" />
   <title>Sweater Style Form</title>
 </head>
 
 <body>
   <section class="top">
     <h1>Let's Design A Knitted Sweater Together</h1>
+    <p>Scroll Down  for Neck Edging</p>
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Styles</a></li>
+          <li><a href="sweater.html">Styles</a></li>
           <li><a href="index1a.html">Edges</a></li>
           <li><a href="index1b.html">About You</a></li>
           <li><a href="index1c.html">Measurements</a></li>
@@ -28,8 +30,8 @@
     </header>
   </section>
   <form action="" method="post">
-    <section class="neck">
-      <div class="neckedges">
+    <section class="Necks">
+      <div class="Neckedges">
         <h3>
           Choose ONE of the Neck Edge Styles from the many you see below.
         </h3>
@@ -38,11 +40,10 @@
         </h4>
         <h3>Also choose body and sleeve edge styles (ribbing)</h3>
       </div>
-      <div class="row">
         <div class="left">
           <p>Round Neckline Edge Styles</p>
         </div>
-        <div class="right">
+        <div class="right1">
           <section class="edges">
             <label for="Crew Neck">Crew Neck</label>
             <input type="radio" name=" Neckedge" id="Crew Neck" value="Crew Neck" />
@@ -65,7 +66,7 @@
         <div class="left">
           <p>Scoop Neckline Edge Styles</p>
         </div>
-        <div class="right">
+        <div class="right1">
           <section class="edges">
             <label for="Garter Stitch Trim">Garter Stitch Trim</label>
             <input type="radio" name="Neckedge" id="Garter Stitch Trim" value="Garter Stitch Trim" />
@@ -78,7 +79,7 @@
         <div class="left">
           <p>V-Neckline Edge Styles</p>
         </div>
-        <div class="right">
+        <div class="right1">
           <section class="edges">
             <label for="Mitred Rib Trim">Mitred Rib Trim</label>
             <input type="radio" name="Neckedge" id="Mitred Rib Trim" value="Mitred Rib Trim" />
@@ -91,7 +92,7 @@
         <div class="left">
           <p>Square Neckline Edge Styles</p>
         </div>
-        <div class="right">
+        <div class="right1">
           <section class="edges">
             <label for="Mitred K1P1 Rib Trim">Mitred K1P1 Rib Trim</label>
             <input type="radio" name="Neckedge" id="Mitred K1P1 Rib Trim" value="Mitred K1P1 Rib  Trim" />
@@ -112,7 +113,7 @@
         <div class="left">
           <p>Placket Neckline Edge Styles</p>
         </div>
-        <div class="right">
+        <div class="right1">
           <section class="edges">
             <label for="Buttoned Henley">Buttoned Henley</label>
             <input type="radio" name="Neckedge" id="Buttoned Henley" value="Buttoned Henley" />
@@ -134,7 +135,7 @@
             <div class="left">
               <p>Slit Neckline Edge Styles</p>
             </div>
-            <div class="right">
+            <div class="right1">
               <section class="edges">
                 <label for="with Johnny collar">With Johnny Collar</label>
             <input type="radio" name="Neckedge" id="with Johnny collar" value="with Johnny collar" />
@@ -147,7 +148,7 @@
         <div class="left">
           <p>Body and Sleeve Edge Styles (ribbing).</p>
         </div>
-        <div class="right">
+        <div class="right1">
           <section class="edges">
             <label for=" garter stitch"> Garter Stitch</label>
             <input type="radio" name="ribbing" id="garter stitch" value="garter stitch" />
@@ -166,10 +167,8 @@
       </div>
     </section>
     <section class="buttons">
-      <div class="row">
-        <a href="index.html" class="button next">Back</a>
-        <a href="index1b.html" class="button next">Next</a>
-      </div>
+        <a href="index.html" class="button">Back</a>
+        <a href="index1b.html" class="butnext">Next</a>
     </section>
     </section>
   </form>

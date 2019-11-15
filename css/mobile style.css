@@ -1,325 +1,436 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: "Fira Sans", sans-serif;
-  background: rgb(103, 220, 247);
-  width: 50%vpw;
-}
-.top h1 {
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-  border: 2px solid black;
-  border-radius: 2em;
-  margin: 1em 3em;
-  padding: 2em;
-  color: white;
-  text-align: center;
-}
-.top p {
-  background-color: rgb(7, 184, 248);
-  color: white;
-  text-align: center;
-  padding: 0.2em;
-}
-nav > ul {
-  display: block;
-  list-style-type: none;
-}
+@media screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Fira Sans", sans-serif;
+    background: rgb(103, 220, 247);
+    width: 50%vpw;
+  }
+  .top h1 {
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+    border: 2px solid black;
+    border-radius: 2em;
+    margin: 1em 3em;
+    padding: 2em;
+    color: white;
+    text-align: center;
+  }
+  .top p {
+    background-color: rgb(7, 184, 248);
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+  }
+  nav > ul {
+    display: block;
+    list-style-type: none;
+  }
 
-nav > ul > li {
-  height: 5.5em;
-}
+  nav > ul > li {
+    height: 3.75em;
+  }
 
-nav > ul > li > a {
-  display: flex;
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-  border: 2px solid black;
-  border-radius: 2em;
-  padding: 0.5em;
-  text-decoration: none;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: white;
-  transition: color 0.3s linear;
-}
+  nav > ul > li > a {
+    display: flex;
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 0.5em;
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.3s linear;
+  }
 
-nav > ul > li > a:hover {
-  color: rgb(68, 2, 22);
-  font-size: 2em;
-  transition: color 0.1s linear;
+  nav > ul > li > a:hover {
+    color: rgb(68, 2, 22);
+    font-size: 2em;
+    transition: color 0.1s linear;
+  }
+  .neckline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 5em;
+  }
+  .neck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 15em;
+    position: relative;
+    top: 1em;
+    border: 2px solid black;
+    padding: 1em;
+    background-color: orange;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+  .neck:hover {
+    transition: 1s linear;
+    background: linear-gradient(
+      135deg,
+      rgb(24, 247, 3) 0%,
+      rgb(70, 221, 241) 35%,
+      rgb(170, 7, 240) 100%
+    );
+    padding: 4em;
+    font-size: 1.5em;
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    border-radius: 50%;
+    height: 30em;
+  }
+  .Neckedges {
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 15em;
+    padding: 2em;
+    color: white;
+  }
+  .left {
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: chartreuse;
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em 2em;
+  }
+  .right1 {
+    border: 2px solid black;
+    background-color: rgb(240, 7, 155);
+    padding: 2em;
+    margin: 1em 2em;
+  }
+  .column {
+    display: inline-block;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    background-color: rgb(250, 235, 69);
+    font-size: 1em;
+    font-weight: 800;
+  }
+  .column:hover {
+    background-color: orange;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+  .label {
+    margin: 0 3em 1em;
+  }
+  .measurements {
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    width: 25em;
+    left: 15%;
+    border: 2px solid white;
+    padding: 1em;
+  }
+  input:not([type="button"]):not([type="submit"]),
+  textarea {
+    border: 2px solid black;
+    background-color: paleturquoise;
+    transition: 0.5s ease background-color;
+    font-size: 1em;
+    color: black;
+    margin: 1em;
+  }
+  .silhouette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 37em;
+  }
+  .silhouette p,
+  .armhole p,
+  .sleeve p,
+  .sleeve2 p,
+  .neckline p,
+  .column p,
+  .measurements p {
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+    color: white;
+    text-align: center;
+    padding: 0.75em;
+  }
+  .styles {
+    height: 30em;
+  }
+  h2 {
+    background: linear-gradient(
+      180deg,
+      rgb(2, 181, 247) 0%,
+      rgb(7, 7, 240) 100%
+    );
+    padding: 1em;
+    color: white;
+  }
+  h2 :hover {
+    color: rgb(47, 247, 7);
+    font-size: 1.25em;
+    transition: color 1s linear;
+  }
+  .me h2 {
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(153, 247, 2) 50%,
+      rgb(7, 205, 240) 100%
+    );
+    color: black;
+  }
+
+  ol {
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+    padding: 2em;
+    list-style-type: none;
+  }
+  ol > li > a {
+    font-size: 1.5em;
+    color: rgb(68, 2, 22);
+    text-decoration: none;
+  }
+
+  .torso {
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    border: 2px solid black;
+    padding: 2em;
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+  }
+  .torso:hover {
+    transition: 1s linear;
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(153, 247, 2) 50%,
+      rgb(7, 205, 240) 100%
+    );
+    padding: 1rem;
+    border-radius: 100%;
+    padding: 2.5em;
+    font-size: 1.5em;
+  }
+  .shapes {
+    flex-direction: column;
+    position: relative;
+    top: 1em;
+    height: 3em;
+  }
+
+  .shapes label {
+    background-color: rgb(245, 225, 8);
+    border: 0.25em solid black;
+    border-radius: 1em;
+    padding: 0.5em;
+    color: black;
+  }
+  .save {
+    background-color: yellowgreen;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 3em;
+    font-size: 1em;
+  }
+  .submit {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 3em;
+    font-size: 1em;
+  }
+
+  .armhole {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 37em;
+  }
+  .armhole .torso:hover {
+    transition: 1s linear;
+    background: linear-gradient(
+      90deg,
+      rgb(247, 218, 2) 0%,
+      rgb(2, 247, 141) 40%,
+      rgba(3, 100, 245, 0.701) 70%
+    );
+    padding: 1rem;
+    border-radius: 100%;
+    padding: 2.5em;
+    font-size: 1.5em;
+  }
+
+  .sleeve {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .more {
+    position: relative;
+    left: 2em;
+  }
+
+  .sleeve2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 12em;
+  }
+  p a {
+    text-decoration: none;
+    color: white;
+  }
+  .arm {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    position: relative;
+    top: 1.5em;
+    border: 2px solid black;
+    padding: 1em;
+    background-color: orange;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+  .sleeve .arm:hover {
+    transition: 2s linear;
+    background: linear-gradient(
+      135deg,
+      rgb(247, 189, 153) 0%,
+      rgb(241, 221, 70) 35%,
+      rgb(28, 174, 177) 100%
+    );
+    padding: 3.5em;
+    font-size: 1.5em;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 50%;
+    height: 30em;
+  }
+
+  .sleeve2 .arm:hover {
+    transition: 2s linear;
+    background: linear-gradient(
+      135deg,
+      rgb(247, 189, 153) 0%,
+      rgb(241, 221, 70) 35%,
+      rgb(7, 236, 240) 100%
+    );
+    padding: 3.5em;
+    font-size: 1.5em;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(-360deg);
+    border-radius: 50%;
+    height: 30em;
+  }
+  .sleevebutton {
+    position: relative;
+    height: 15em;
+  }
+  .sleeve2button {
+    position: relative;
+    top: 20em;
+    height: 10em;
+  }
+  .buttons {
+    position: relative;
+    top: 4em;
+  }
+  .button,
+  .butnext,
+  .butbtt,
+  .butfor {
+    background: linear-gradient(
+      180deg,
+      rgb(247, 169, 2) 0%,
+      rgb(247, 88, 2) 50%,
+      rgb(240, 7, 155) 100%
+    );
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+  }
+  .butst {
+    background-color: rgb(245, 150, 7);
+    color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2em;
+    font-size: 1em;
+  }
 }
-.neckline{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 5em;
-}
-.neck {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 15em;
+.butfor {
   position: relative;
-  top: 1.5em;
-  border: 2px solid black;
-  padding: 1em;
-  background-color: orange;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 1s;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
+  left: 8.5em;
+  top: 4em;
 }
-.neck:hover {
-  transition: 1s linear;
-  background: linear-gradient(
-    135deg,
-    rgb(24, 247, 3) 0%,
-    rgb(70, 221, 241) 35%,
-    rgb(170, 7, 240) 100%
-  );
-  padding: 4em;
-  font-size: 1.5em;
-  -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
-  border-radius: 50%;
-  height: 30em;
-}
-
-.silhouette {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 37em;
-}
-.silhouette p,
-.armhole p,
-.sleeve p,
-.sleeve2 p,
-.neckline p {
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-  color: white;
-  text-align: center;
-  padding: 0.75em;
-}
-.styles {
-  height: 30em;
-}
-h2 {
-  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
-  padding: 1em;
-  color: white;
-}
-ol {
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-  padding: 2em;
-  list-style-type: none;
-}
-ol > li > a {
-  font-size: 1.5em;
-  color: rgb(68, 2, 22);
-  text-decoration: none;
-}
-h2 :hover {
-  color: rgb(47, 247, 7);
-  font-size: 1.25em;
-  transition: color 0s linear;
-}
-.torso {
-  display: flex;
-  flex-direction: column;
-  height: 20em;
-  border: 2px solid black;
-  padding: 2em;
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-}
-.torso:hover {
-  transition: 1s linear;
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(153, 247, 2) 50%,
-    rgb(7, 205, 240) 100%
-  );
-  padding: 1rem;
-  border-radius: 100%;
-  padding: 2.5em;
-  font-size: 1.5em;
-}
-.shapes {
-  flex-direction: column;
+.butnext {
   position: relative;
-  top: 1em;
-  height: 3em;
+  left: 10em;
 }
-
-.shapes label {
-  background-color: rgb(245, 225, 8);
-  border: 0.25em solid black;
-  border-radius: 1em;
-  padding: 0.5em;
-  color: black;
-}
-
-.armhole {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 37em;
-}
-.armhole .torso:hover {
-  transition: 1s linear;
-  background: linear-gradient(
-    90deg,
-    rgb(247, 218, 2) 0%,
-    rgb(2, 247, 141) 40%,
-    rgba(3, 100, 245, 0.701) 70%
-  );
-  padding: 1rem;
-  border-radius: 100%;
-  padding: 2.5em;
-  font-size: 1.5em;
-}
-
-.sleeve {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
-}
-
-.more{
-position: relative;
-left:2em;
-}
-
-.sleeve2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
+.button {
   position: relative;
-  top:12em;
-}
-p a {
-  text-decoration: none;
-  color: white;
-}
-.arm {
-  display: flex;
-  flex-direction: column;
-  height: 30em;
-  position: relative;
-  top: 1.5em;
-  border: 2px solid black;
-  padding: 1em;
-  background-color: orange;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 1s;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-}
-.sleeve .arm:hover {
-  transition: 2s linear;
-  background: linear-gradient(
-    135deg,
-    rgb(247, 189, 153) 0%,
-    rgb(241, 221, 70) 35%,
-    rgb(28, 174, 177) 100%
-  );
-  padding: 3.5em;
-  font-size: 1.5em;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  border-radius: 50%;
-  height: 30em;
-}
-
-.sleeve2 .arm:hover {
-  transition: 2s linear;
-  background: linear-gradient(
-    135deg,
-    rgb(247, 189, 153) 0%,
-    rgb(241, 221, 70) 35%,
-    rgb(7, 236, 240) 100%
-  );
-  padding: 3.5em;
-  font-size: 1.5em;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(-360deg);
-  border-radius: 50%;
-  height: 30em;
-}
-.sleevebutton{
-  position: relative;
-  height: 15em;
-}
-.sleeve2button{
-  position:relative;
-  top:20em; 
-  height:10em;
-
-}
-.buttons{
-  position: relative;
-  top:4em;
-
-}
-.button,.butnext,.butbtt {
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-  padding: 1em;
-  border: 2px solid black;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.5em;
-  color: white;
-}
-.butbtt{
-  position: relative;
-  top:em;
-
-}
-.butnext{
-  position: relative;
-  left:10em;
-}
-.button{
-  position:relative;
-  left:5em;
+  left: 5em;
 }

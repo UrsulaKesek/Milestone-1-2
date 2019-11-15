@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="css/mobile style.css" media="screen and (max-width:600px") />
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width:601px")/>
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
       rel="stylesheet"
@@ -15,6 +16,7 @@
   <body>
     <section class="top">
       <h1>Let's Design A Knitted Sweater Together</h1>
+      <p>Scroll Down  for Your Details</p>
       <header>
         <nav>
           <ul>
@@ -29,21 +31,23 @@
       </header>
     </section>
     <form action="" method="post">
-            <h2>Your Details:</h2>
                <div class="column">
-                  <input type="text"name="name"id="name" placeholder="Name">
-                  <input type="text"name="address"id="address"placeholder="Address">
-                  <input type="text"name="address1"id="address1"placeholder="Address">
-                  <input type="text"name="town"id="town"placeholder="Town">
-                  <input type="text"name="postcode"id="postcode"placeholder="Postcode">
-                  <input type="text"name="country"id="country"placeholder="Country">
-                  <input type="text"name="tel"id="tel"placeholder="Tel/Mobile">
-                  <input type="text"name="e-mail"id="e-mail"placeholder="E-mail">
+                  <p>Your Details:</p>
+
+                  <div class="label"><input type="text"name="name"id="name" placeholder="Name"></div>
+                  <div class="label"><input type="text"name="address"id="address"placeholder="Address"></div>
+                  <div class="label"><input type="text"name="address1"id="address1"placeholder="Address"></div>
+                  <div class="label"><input type="text"name="town"id="town"placeholder="Town"></div>
+                  <div class="label"><input type="text"name="postcode"id="postcode"placeholder="Postcode"></div>
+                  <div class="label"><input type="text"name="country"id="country"placeholder="Country"></div>
+                  <div class="label"><input type="text"name="tel"id="tel"placeholder="Tel/Mobile"></div>
+                  <div class="label"><input type="text"name="e-mail"id="e-mail"placeholder="E-mail"></div>
                  </div>
+                
        <section class="buttons">
            <div class="row">
              <a href="index1a.html"class="button next">Back</a>
-             <a href="index1c.html"class="button next">Next</a>
+             <a href="index1c.html"class="butnext">Next</a>
           </div>
      </section>
   </form>
