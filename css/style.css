@@ -8,18 +8,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  font-family: "Fira Sans", sans-serif;
-  padding: 0 3vw;
-  font-size: 2em;
-  text-align: center;
-  color: black;
-}
 
 nav {
   padding: 1vw;
   background: black;
-  border: 2px solid white;
+  border: 2px solid red;
 }
 
 nav > ul {
@@ -60,19 +53,38 @@ ol > li > a {
   text-decoration: none;
 }
 
-.top {
-  background-color: paleturquoise;
+.top h1 {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
   border: 2px solid black;
-  padding: 1em;
-}
-
-h1 {
-  background: black;
-  border: 2px solid white;
+  border-radius: 2em;
+  margin: 1em 3em;
+  padding: 2em;
   color: white;
-  font-weight: 800;
   text-align: center;
-  padding: 1em;
+}
+p {
+  background-color: rgb(247, 169, 2);
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding: 0.2em;
+  animation: change-background-color 2s infinite linear;
+}
+@keyframes change-background-color {
+  0% {
+    background: rgb(103, 220, 247);
+  }
+  50% {
+    background: rgb(103, 220, 247);
+  }
+  100% {
+    background-color: rgb(240, 7, 155);
+  }
 }
 h2 {
   background-color: paleturquoise;
@@ -93,7 +105,20 @@ h4 {
 h5 {
   color: white;
 }
-a.button {
+.silhouette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 15em;
+}
+.armhole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 15em;
+}
+
+a .button {
   background-color: rgb(245, 150, 7);
   padding: 0.5em;
   color: black;
@@ -102,19 +127,19 @@ a.button {
   text-decoration: none;
   text-align: center;
 }
-.button:hover {
-  color: rgb(250, 8, 181);
-}
-.button:active {
-  background: #03f3f7;
-}
 .buttons {
   height: 4em;
   padding: 3em;
 }
-.butnext {
+a.butnext {
+  position: relative;
+  left: 0.25em;
+}
+.butnext,
+.button {
   background-color: rgb(250, 235, 69);
   padding: 0.5em;
+  border-radius: 1em;
   color: black;
   font-size: 1.5em;
   font-family: "Fira Sans", sans-serif;
@@ -125,7 +150,8 @@ a.button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 20em;
+  height: 15em;
+  border: 2px solid red;
 }
 a {
   text-decoration: none;
@@ -142,17 +168,20 @@ a {
   flex-direction: row;
 }
 .save {
-  background-color: rgb(15, 245, 7);
+  background-color: rgb(245, 150, 7);
   font-size: 1em;
   color: white;
   padding: 1em;
+  border-radius: 50%;
   cursor: pointer;
 }
 .submit {
-  background-color: rgb(6, 238, 122);
+  background-color: rgb(7, 245, 27);
   font-size: 1em;
-  color: white;
+  color: black;
   padding: 1em;
+  border-radius: 50%;
+
   cursor: pointer;
 }
 .styles {
@@ -160,23 +189,6 @@ a {
   padding: 1em;
   margin: 0.5em;
   height: 32em;
-}
-.silhouette p,
-.armhole p,
-.sleeve p,
-.sleeve2 p,
-.neckline p,
-.column p,
-.measurements p {
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
-  color: white;
-  text-align: center;
-  padding: 0.75em;
 }
 
 .row {
@@ -189,10 +201,11 @@ a {
 .column {
   display: inline-block;
   flex-direction: column;
-  width: 50%;
+  width: 33%;
   position: relative;
-  left: 25%;
-  background-color: rgb(250, 235, 69);
+  top: 1.5em;
+  left: 33%;
+  background-color: rgb(240, 7, 155);
   font-size: 1em;
   font-weight: 800;
 }
@@ -220,10 +233,11 @@ input[type="number"] {
   color: black;
 }
 .torso {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 1em;
-  background-color: rgb(250, 235, 69);
-  border: 2px solid rgb(6, 243, 243);
+  border: 2px solid red;
   font-family: "Fira Sans", sans-serif;
   font-size: 1.5em;
   color: black;
@@ -253,14 +267,13 @@ input[type="number"] {
   padding: 1em;
 }
 .edges {
-  background-color: rgb(250, 235, 69);
-  border: 2px solid rgb(6, 243, 243);
+  border: 2px solid red;
+  background-color: black;
   font-family: "Fira Sans", sans-serif;
   font-size: 1em;
-  width: 100%;
-  height: 8em;
+  height: 4em;
   padding: 0.5em 4em;
-  color: black;
+  color: white;
 }
 .measurements {
   display: flexbox;
@@ -300,11 +313,23 @@ sup {
   width: 400px;
   margin: 3em;
 }
-.aob {
+.column:hover {
   background-color: rgb(250, 235, 69);
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 0.5s;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: o.5s;
+}
+.aob {
+  background-color: rgb(240, 7, 155);
   border: 2px solid maroon;
   margin: 1em;
-  height: 28em;
+  height: 43em;
+  animation: change-background-color 2s infinite linear;
 }
 .contact {
   padding: 0.5em 0.5em;
@@ -320,30 +345,30 @@ textarea {
   background-color: paleturquoise;
   transition: 0.5s ease background-color;
   font-size: 1.5em;
-  color: white;
+  color: black;
   margin: 1em;
 }
 
 .me {
-  background-color: rgb(250, 235, 69);
-  border: 3px solid rgb(6, 243, 243);
-  height: 10em;
+  background-color: rgb(240, 7, 155);
+  border: 3px solid red;
+  height: 16em;
   padding: 0.5em 1em;
   margin: 1em;
 }
+.sleeve {
+  height: 30em;
+}
+.sleeve2 {
+  height: 30em;
+}
 .sleeve2button {
   position: relative;
-  top: 7em;
   left: 1em;
   height: 3em;
 }
 .butbtt {
-  background: linear-gradient(
-    180deg,
-    rgb(247, 169, 2) 0%,
-    rgb(247, 88, 2) 50%,
-    rgb(240, 7, 155) 100%
-  );
+  background-color: red;
   padding: 1em;
   border: 2px solid black;
   border-radius: 50%;
@@ -351,16 +376,14 @@ textarea {
   font-size: 1em;
   color: white;
 }
-.choose {
-  height: 6em;
-}
+.choose,
 .click {
-  margin: 2em 0;
-  height: 10em;
+  margin: 0 auto;
+  height: 5em;
 }
 
 .butst {
-  background-color: rgb(245, 150, 7);
+  background-color: rgb(240, 7, 155);
   color: white;
   text-decoration: none;
   border: 2px solid black;
