@@ -21,7 +21,7 @@
     color: white;
     text-align: center;
   }
-   p {
+  p {
     background-color: rgb(247, 169, 2);
     font-size: 1.5em;
     color: white;
@@ -33,7 +33,7 @@
     0% {
       background: rgb(103, 220, 247);
     }
-    50%{
+    50% {
       background: rgb(103, 220, 247);
     }
     100% {
@@ -87,7 +87,7 @@
     justify-content: space-around;
     height: 15em;
     position: relative;
-    top: 1em;
+    top: 5em;
     border: 2px solid black;
     padding: 1em;
     background-color: orange;
@@ -143,6 +143,11 @@
     padding: 2em;
     margin: 1em 2em;
   }
+  choose,
+  .click {
+    margin: 0 auto;
+    height: 5em;
+  }
   .column {
     display: inline-block;
     flex-direction: column;
@@ -169,258 +174,266 @@
   }
   .measurements {
     display: flexbox;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
-    width: 25em;
     left: 15%;
+    width: 25em;
     border: 2px solid white;
     padding: 1em;
   }
-  input:not([type="button"]):not([type="submit"]),
-  textarea {
-    border: 2px solid black;
-    background-color: paleturquoise;
-    transition: 0.5s ease background-color;
-    font-size: 1em;
-    color: black;
-    margin: 1em;
-  }
-  .silhouette {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 37em;
-  }
-  
-  .styles {
-    height: 30em;
-  }
-  h2 {
-    background: linear-gradient(
-      180deg,
-      rgb(2, 181, 247) 0%,
-      rgb(7, 7, 240) 100%
-    );
-    padding: 1em;
-    color: white;
-  }
-  h2 :hover {
-    color: rgb(47, 247, 7);
-    font-size: 1.25em;
-    transition: color 1s linear;
-  }
-  .me h2 {
-    background: linear-gradient(
-      180deg,
-      rgb(247, 169, 2) 0%,
-      rgb(153, 247, 2) 50%,
-      rgb(7, 205, 240) 100%
-    );
-    color: black;
-  }
-
-  ol {
-    background: linear-gradient(
-      180deg,
-      rgb(247, 169, 2) 0%,
-      rgb(247, 88, 2) 50%,
-      rgb(240, 7, 155) 100%
-    );
-    padding: 2em;
-    list-style-type: none;
-  }
-  ol > li > a {
-    font-size: 1.5em;
-    color: rgb(68, 2, 22);
-    text-decoration: none;
-  }
-
-  .torso {
-    display: flex;
-    flex-direction: column;
-    height: 20em;
-    border: 2px solid black;
-    padding: 2em;
-    background: linear-gradient(
-      180deg,
-      rgb(247, 169, 2) 0%,
-      rgb(247, 88, 2) 50%,
-      rgb(240, 7, 155) 100%
-    );
-  }
-  .torso:hover {
-    transition: 1s linear;
-    background: linear-gradient(
-      180deg,
-      rgb(247, 169, 2) 0%,
-      rgb(153, 247, 2) 50%,
-      rgb(7, 205, 240) 100%
-    );
-    padding: 1rem;
-    border-radius: 100%;
-    padding: 2.5em;
-    font-size: 1.5em;
-  }
-  .shapes {
-    flex-direction: column;
-    position: relative;
-    top: 1em;
-    height: 3em;
-  }
-
-  .shapes label {
-    background-color: rgb(245, 225, 8);
-    border: 0.25em solid black;
-    border-radius: 1em;
-    padding: 0.5em;
-    color: black;
-  }
-  .save {
-    background-color: yellowgreen;
-    border: 2px solid black;
-    border-radius: 50%;
-    padding: 3em;
-    font-size: 1em;
-  }
-  .submit {
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 50%;
-    padding: 3em;
-    font-size: 1em;
-  }
-
-  .armhole {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 37em;
-  }
-  .armhole .torso:hover {
-    transition: 1s linear;
-    background: linear-gradient(
-      90deg,
-      rgb(247, 218, 2) 0%,
-      rgb(2, 247, 141) 40%,
-      rgba(3, 100, 245, 0.701) 70%
-    );
-    padding: 1rem;
-    border-radius: 100%;
-    padding: 2.5em;
-    font-size: 1.5em;
-  }
-
-  .sleeve {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .more {
-    position: relative;
-    left: 2em;
-  }
-
-  .sleeve2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    position: relative;
-    top: 12em;
-  }
-  p a {
-    text-decoration: none;
-    color: white;
-  }
-  .arm {
-    display: flex;
-    flex-direction: column;
-    height: 30em;
-    position: relative;
-    top: 1.5em;
-    border: 2px solid black;
-    padding: 1em;
-    background-color: orange;
+  .measurements:hover {
+    background-color: rgb(250, 235, 69);
     -webkit-transition-property: all;
     -webkit-transition-duration: 2s;
     -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 1s;
+    -webkit-transition-delay: 0.5s;
     transition-property: all;
     transition-duration: 2s;
     transition-timing-function: linear;
-    transition-delay: 1s;
-  }
-  .sleeve .arm:hover {
-    transition: 2s linear;
-    background: linear-gradient(
-      135deg,
-      rgb(247, 189, 153) 0%,
-      rgb(241, 221, 70) 35%,
-      rgb(28, 174, 177) 100%
-    );
-    padding: 3.5em;
-    font-size: 1.5em;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    border-radius: 50%;
-    height: 30em;
-  }
-
-  .sleeve2 .arm:hover {
-    transition: 2s linear;
-    background: linear-gradient(
-      135deg,
-      rgb(247, 189, 153) 0%,
-      rgb(241, 221, 70) 35%,
-      rgb(7, 236, 240) 100%
-    );
-    padding: 3.5em;
-    font-size: 1.5em;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(-360deg);
-    border-radius: 50%;
-    height: 30em;
-  }
-  .sleevebutton {
-    position: relative;
-    height: 15em;
-  }
-  .sleeve2button {
-    position: relative;
-    top: 20em;
-    height: 10em;
-  }
-  .buttons {
-    position: relative;
-    top: 4em;
-  }
-  .button,
-  .butnext,
-  .butbtt,
-  .butfor {
-    background: linear-gradient(
-      180deg,
-      rgb(247, 169, 2) 0%,
-      rgb(247, 88, 2) 50%,
-      rgb(240, 7, 155) 100%
-    );
-    padding: 1em;
-    border: 2px solid black;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 1.5em;
-    color: white;
-  }
-  .butst {
-    background-color: rgb(245, 150, 7);
-    color: white;
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 50%;
-    padding: 2em;
-    font-size: 1em;
+    transition-delay: o.5s;
   }
 }
+input:not([type="button"]):not([type="submit"]),
+textarea {
+  border: 2px solid black;
+  background-color: paleturquoise;
+  transition: 0.5s ease background-color;
+  font-size: 1em;
+  color: black;
+  margin: 1em;
+}
+.silhouette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 37em;
+}
+
+.styles {
+  height: 30em;
+}
+h2 {
+  background: linear-gradient(180deg, rgb(2, 181, 247) 0%, rgb(7, 7, 240) 100%);
+  padding: 1em;
+  color: white;
+}
+h2 :hover {
+  color: rgb(47, 247, 7);
+  font-size: 1.25em;
+  transition: color 1s linear;
+}
+.me h2 {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(153, 247, 2) 50%,
+    rgb(7, 205, 240) 100%
+  );
+  color: black;
+}
+
+ol {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+  padding: 2em;
+  list-style-type: none;
+}
+ol > li > a {
+  font-size: 1.5em;
+  color: rgb(68, 2, 22);
+  text-decoration: none;
+}
+
+.torso {
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+  border: 2px solid black;
+  padding: 2em;
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+}
+.torso:hover {
+  transition: 1s linear;
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(153, 247, 2) 50%,
+    rgb(7, 205, 240) 100%
+  );
+  padding: 1rem;
+  border-radius: 100%;
+  padding: 2.5em;
+  font-size: 1.5em;
+}
+.shapes {
+  flex-direction: column;
+  position: relative;
+  top: 1em;
+  height: 3em;
+}
+
+.shapes label {
+  background-color: rgb(245, 225, 8);
+  border: 0.25em solid black;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: black;
+}
+.save {
+  background-color: yellowgreen;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 3em;
+  font-size: 1em;
+}
+.submit {
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 3em;
+  font-size: 1em;
+}
+
+.armhole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 37em;
+}
+.armhole .torso:hover {
+  transition: 1s linear;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 218, 2) 0%,
+    rgb(2, 247, 141) 40%,
+    rgba(3, 100, 245, 0.701) 70%
+  );
+  padding: 1rem;
+  border-radius: 100%;
+  padding: 3em;
+  font-size: 1.5em;
+}
+
+.sleeve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.more {
+  position: relative;
+  left: 2em;
+}
+
+.sleeve2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  top: 12em;
+}
+p a {
+  text-decoration: none;
+  color: white;
+}
+.arm {
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  position: relative;
+  top: 1.5em;
+  border: 2px solid black;
+  padding: 1em;
+  background-color: orange;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+.sleeve .arm:hover {
+  transition: 2s linear;
+  background: linear-gradient(
+    135deg,
+    rgb(247, 189, 153) 0%,
+    rgb(241, 221, 70) 35%,
+    rgb(28, 174, 177) 100%
+  );
+  padding: 3.5em;
+  font-size: 1.5em;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  border-radius: 50%;
+  height: 30em;
+}
+
+.sleeve2 .arm:hover {
+  transition: 2s linear;
+  background: linear-gradient(
+    135deg,
+    rgb(247, 189, 153) 0%,
+    rgb(241, 221, 70) 35%,
+    rgb(7, 236, 240) 100%
+  );
+  padding: 3.5em;
+  font-size: 1.5em;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(-360deg);
+  border-radius: 50%;
+  height: 30em;
+}
+.sleevebutton {
+  position: relative;
+  height: 15em;
+}
+.sleeve2button {
+  position: relative;
+  top: 20em;
+  height: 10em;
+}
+.buttons {
+  position: relative;
+  top: 4em;
+}
+.button,
+.butnext,
+.butbtt,
+.butfor {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+.butst {
+  background-color: rgb(245, 150, 7);
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2em;
+  font-size: 1em;
+}
+
 .butfor {
   position: relative;
   left: 8.5em;

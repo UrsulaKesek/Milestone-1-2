@@ -8,22 +8,18 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
 nav {
   padding: 1vw;
   background: black;
   border: 2px solid red;
 }
-
 nav > ul {
   display: flex;
   list-style-type: none;
 }
-
 nav > ul > li {
   margin: 0 3vw;
 }
-
 nav > ul > li > a {
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
@@ -32,7 +28,6 @@ nav > ul > li > a {
   color: white;
   transition: color 0.3s linear;
 }
-
 nav > ul > li > a:hover {
   color: rgb(250, 8, 181);
   transition: color 0.1s linear;
@@ -52,7 +47,6 @@ ol > li > a {
   color: rgb(68, 2, 22);
   text-decoration: none;
 }
-
 .top h1 {
   background: linear-gradient(
     180deg,
@@ -93,11 +87,16 @@ h2 {
   text-align: center;
   padding: 1em;
 }
+h2 :hover {
+  color: rgb(47, 247, 7);
+  font-size: 1.25em;
+  transition: color 1s linear;
+}
 h3 {
   color: black;
 }
 h4 {
-  background-color: rgb(250, 235, 69);
+  background-color: (247, 88, 2);
   text-align: center;
   color: black;
   padding: 1em;
@@ -117,7 +116,6 @@ h5 {
   justify-content: space-around;
   height: 15em;
 }
-
 a .button {
   background-color: rgb(245, 150, 7);
   padding: 0.5em;
@@ -181,7 +179,6 @@ a {
   color: black;
   padding: 1em;
   border-radius: 50%;
-
   cursor: pointer;
 }
 .styles {
@@ -190,7 +187,6 @@ a {
   margin: 0.5em;
   height: 32em;
 }
-
 .row {
   display: block;
   flex-direction: row;
@@ -242,36 +238,45 @@ input[type="number"] {
   font-size: 1.5em;
   color: black;
 }
-
 .neck {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  left: 15%;
   border: 2px solid red;
   padding: 1em;
-  margin: 0 auto;
   height: 6em;
 }
 .necklines {
-  width: 75%;
+  width: 100%;
   height: 9em;
   background-color: rgb(250, 235, 69);
   border: 2px solid rgb(6, 243, 243);
   padding: 0.5em;
 }
-.neckedges {
-  background-color: paleturquoise;
-  border: 2px solid rgb(6, 243, 243);
-  font-family: "Fira Sans", sans-serif;
-  font-size: 1em;
-  text-align: center;
+.Necks {
+  height: 140em;
+}
+.Neckedges {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
+  border: 2px solid black;
   height: 15em;
-  padding: 1em;
+  padding: 2em;
+  color: white;
 }
 .edges {
   border: 2px solid red;
   background-color: black;
   font-family: "Fira Sans", sans-serif;
   font-size: 1em;
-  height: 4em;
+  height: 4.5em;
   padding: 0.5em 4em;
   color: white;
 }
@@ -279,13 +284,26 @@ input[type="number"] {
   display: flexbox;
   flex-direction: row;
   position: relative;
-  width: 45em;
-  left: 25%;
-  border: 2px solid white;
+  top: 1em;
+  width: 50em;
+  left: 17.5em;
+  border: 2px solid red;
+  padding: 1em;
+}
+.measurements:hover {
+  background-color: rgb(240, 7, 155);
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 0.5s;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: o.5s;
 }
 .measurements p {
-  width: 95%;
-  height: 4em;
+  width: 100%;
+  height: 2em;
   font-size: 1.5em;
 }
 .cms {
@@ -348,7 +366,6 @@ textarea {
   color: black;
   margin: 1em;
 }
-
 .me {
   background-color: rgb(240, 7, 155);
   border: 3px solid red;
@@ -381,7 +398,6 @@ textarea {
   margin: 0 auto;
   height: 5em;
 }
-
 .butst {
   background-color: rgb(240, 7, 155);
   color: white;
@@ -391,7 +407,6 @@ textarea {
   padding: 2em;
   font-size: 1em;
 }
-
 .butfor {
   background-color: rgb(250, 235, 69);
   color: black;
