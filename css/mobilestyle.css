@@ -99,6 +99,15 @@
     transition-duration: 2s;
     transition-timing-function: linear;
     transition-delay: 1s;
+    animation:fall 1s linear;
+  }
+  @keyframes fall{
+    from{
+      transform: translateY(-40%);
+    }
+    to{
+      transform: translateY(500%);
+    }
   }
   .neck:hover {
     transition: 1s linear;
@@ -137,7 +146,8 @@
     text-align: center;
     margin: 1em 2em;
   }
-  .right1 {
+  
+   .right1 {
     border: 2px solid black;
     background-color: rgb(240, 7, 155);
     padding: 2em;
@@ -148,7 +158,7 @@
     margin: 0 auto;
     height: 5em;
   }
-  .column {
+   .column{
     display: inline-block;
     flex-direction: column;
     width: 50%;
@@ -170,7 +180,7 @@
     transition-delay: o.5s;
   }
   .label {
-    margin: 0 3em 1em;
+    margin: 0 4.5em 1em;
   }
   .measurements {
     display: flexbox;
@@ -248,7 +258,6 @@ ol {
     rgb(247, 88, 2) 50%,
     rgb(240, 7, 155) 100%
   );
-  padding: 2em;
   list-style-type: none;
 }
 ol > li > a {
@@ -269,6 +278,24 @@ ol > li > a {
     rgb(247, 88, 2) 50%,
     rgb(240, 7, 155) 100%
   );
+  animation:move-in-left 4s linear  ;
+}
+@keyframes move-in-left{
+  0%{
+    transform: translateX(-400%);
+  }
+  25%{
+    transform: translateX(0%);
+  }
+  50%{
+    transform: translateX(60%);    
+  }
+75%{
+  transform: translateX(100%);    
+}
+100%{
+  transform: translateX(1000%);    
+}
 }
 .torso:hover {
   transition: 1s linear;
@@ -283,6 +310,7 @@ ol > li > a {
   padding: 2.5em;
   font-size: 1.5em;
 }
+
 .shapes {
   flex-direction: column;
   position: relative;
@@ -419,7 +447,8 @@ p a {
 .button,
 .butnext,
 .butbtt,
-.butfor {
+.butfor,
+.butst {
   background: linear-gradient(
     180deg,
     rgb(247, 169, 2) 0%,
@@ -433,16 +462,6 @@ p a {
   font-size: 1.5em;
   color: white;
 }
-.butst {
-  background-color: rgb(245, 150, 7);
-  color: white;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 2em;
-  font-size: 1em;
-}
-
 .butfor {
   position: relative;
   left: 8.5em;

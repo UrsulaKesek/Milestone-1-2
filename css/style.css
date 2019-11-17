@@ -78,7 +78,6 @@ p {
   }
   100% {
     background-color: rgb(240, 7, 155);
-
   }
 }
 h2 {
@@ -186,7 +185,7 @@ a {
   border: 2px solid rgb(247, 169, 2);
   padding: 1em;
   margin: 0.5em;
-  height: 32em;
+  height: 36em;
 }
 .row {
   display: block;
@@ -349,30 +348,30 @@ sup {
   margin: 1em;
   height: 43em;
   animation: change-background-color 2s infinite linear;
-   }
-   @keyframes change-background-color{
-    0% {
-      background: rgb(103, 220, 247);
-    }
-    50% {
-      background: rgb(103, 220, 247);
-    }
-    100% {
-      background-color: rgb(240, 7, 155);
-    }
+}
+@keyframes change-background-color {
+  0% {
+    background: rgb(103, 220, 247);
   }
-      
-    .aob a {
-      background-color: rgb(247, 88, 2);
-      padding: 1em;
-      border: 2px solid black;
-      border-radius: 50%;
-      text-decoration: none;
-      position: relative;
-      top: 1.5em;
-      left: 11em;
-      color: white;
-    }
+  50% {
+    background: rgb(103, 220, 247);
+  }
+  100% {
+    background-color: rgb(240, 7, 155);
+  }
+}
+
+.aob a {
+  background-color: rgb(247, 88, 2);
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  position: relative;
+  top: 1.5em;
+  left: 11em;
+  color: white;
+}
 .contact {
   padding: 0.5em 0.5em;
   font-size: 1em;
