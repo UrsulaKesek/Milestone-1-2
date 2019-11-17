@@ -425,6 +425,10 @@ textarea {
   font-size: 1.5em;
   color: white;
 }
+.buttons .butnext {
+  position: relative;
+  left: 45em;
+}
 .choose,
 .click {
   margin: 0 auto;
