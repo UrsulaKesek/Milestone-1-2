@@ -407,42 +407,27 @@ textarea {
   left: 1em;
   height: 3em;
 }
-.butbtt {
-  background-color: red;
+.button,
+.butnext,
+.butbtt,
+.butfor,
+.butst {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 169, 2) 0%,
+    rgb(247, 88, 2) 50%,
+    rgb(240, 7, 155) 100%
+  );
   padding: 1em;
   border: 2px solid black;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
 }
+
 .choose,
 .click {
   margin: 0 auto;
   height: 5em;
-}
-.butst {
-  background-color: rgb(240, 7, 155);
-  color: white;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 2em;
-  font-size: 1em;
-}
-.butfor {
-  background-color: rgb(250, 235, 69);
-  color: black;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 2em;
-  font-size: 1em;
-  position: relative;
-  left: 4em;
-  top: 2em;
-}
-.butnext {
-  position: relative;
-  left: 10em;
 }
