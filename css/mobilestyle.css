@@ -153,7 +153,7 @@
     padding: 2em;
     margin: 1em 2em;
   }
-  choose,
+  .choose,
   .click {
     margin: 0 auto;
     height: 5em;
@@ -298,7 +298,7 @@ ol > li > a {
   }
 }
 .torso:hover {
-  transition: 1s linear;
+  transition: 2s linear;
   background: linear-gradient(
     180deg,
     rgb(247, 169, 2) 0%,
