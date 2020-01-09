@@ -203,7 +203,7 @@
     transition-delay: o.5s;
   }
   .aob a {
-    background-color: rgb(247, 88, 2);
+    background-color: rgb(55, 247, 2);
     padding: 1em;
     border: 2px solid black;
     border-radius: 50%;
@@ -211,11 +211,11 @@
     position: relative;
     top: 1.5em;
     left: 11em;
-    color: white;
+    color: black;
   }
 }
 textarea {
-  border: 2px solid black;
+  border: 3px solid black;
   background-color: rgb(250, 235, 69);
   font-size: 1em;
   color: black;
