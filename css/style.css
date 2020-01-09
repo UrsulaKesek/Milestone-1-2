@@ -380,7 +380,6 @@ sup {
   color: black;
   width: 25em;
 }
-input:not([type="button"]):not([type="submit"]),
 textarea {
   border: 2px solid rgb(6, 243, 243);
   background-color: paleturquoise;
