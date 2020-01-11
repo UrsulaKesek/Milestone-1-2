@@ -106,9 +106,10 @@ h5 {
 }
 .silhouette {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 15em;
+  height: 25em;
 }
 .armhole {
   display: flex;
@@ -148,15 +149,19 @@ a.butnext {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 15em;
+  height: 17em;
   border: 2px solid red;
 }
 a {
   text-decoration: none;
 }
+.shapes {
+  position: relative;
+  top: 25px;
+}
 .shapes label {
   background-color: rgb(245, 225, 8);
-  border: 0.25em solid black;
+  border: 0.25em solid red;
   border-radius: 1em;
   padding: 0.5em;
   color: black;
@@ -205,6 +210,11 @@ a {
   font-size: 1em;
   font-weight: 800;
 }
+.column .label {
+  position: relative;
+  left: 100px;
+  padding: 20px;
+}
 .left {
   width: 30em;
   color: white;
@@ -232,6 +242,7 @@ input[type="number"] {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 10em;
   padding: 1em;
   border: 2px solid red;
   font-family: "Fira Sans", sans-serif;
@@ -426,7 +437,7 @@ textarea {
 }
 .buttons .butnext {
   position: relative;
-  left: 45em;
+  left: 20em;
 }
 .choose,
 .click {
