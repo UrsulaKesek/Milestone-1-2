@@ -117,6 +117,12 @@ h5 {
   justify-content: space-around;
   height: 15em;
 }
+.buttons {
+  height: 4em;
+  position: relative;
+  top: 10em;
+  left: 20em;
+}
 a .button {
   background-color: rgb(245, 150, 7);
   padding: 0.5em;
@@ -125,10 +131,6 @@ a .button {
   font-family: "Fira Sans", sans-serif;
   text-decoration: none;
   text-align: center;
-}
-.buttons {
-  height: 4em;
-  padding: 3em;
 }
 a.butnext {
   position: relative;
@@ -408,6 +410,8 @@ textarea {
 }
 .sleeve {
   height: 30em;
+  position: relative;
+  top: 12em;
 }
 .sleeve2 {
   height: 30em;
