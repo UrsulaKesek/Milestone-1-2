@@ -155,7 +155,7 @@ a.butnext {
   border: 2px solid red;
 }
 a {
-  text-decoration: none;
+  text-decoration:none;
 }
 .shapes {
   position: relative;
@@ -409,17 +409,30 @@ textarea {
   margin: 1em;
 }
 .sleeve {
-  height: 30em;
-  position: relative;
-  top: 12em;
+  height: 500px;
 }
 .sleeve2 {
-  height: 30em;
+  height:500px;
 }
 .sleeve2button {
   position: relative;
   left: 1em;
   height: 3em;
+}
+.sleeve3{
+  height:350px;
+}
+.sleeve3 a{
+height:100px;
+position: relative;
+top:170px;
+left:2em;
+}
+.sleeve3 p{
+  height:50px;
+  }
+.sleeve a{
+  height:100px;
 }
 .button,
 .butnext,
@@ -446,5 +459,4 @@ textarea {
 .choose,
 .click {
   margin: 0 auto;
-  height: 5em;
 }
