@@ -363,6 +363,7 @@ ol > li > a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height:1200px;
 }
 
 .more {
@@ -375,8 +376,21 @@ ol > li > a {
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  top: 12em;
+  top: 2em;
 }
+.sleeve3{
+  height:350px;
+}
+.sleeve3 a{
+height:50px;
+position: relative;
+top:170px;
+left:7.5em;
+}
+.sleeve3 p{
+  height:60px;
+  }
+
 p a {
   text-decoration: none;
   color: white;
@@ -384,7 +398,7 @@ p a {
 .arm {
   display: flex;
   flex-direction: column;
-  height: 30em;
+  height: 32em;
   position: relative;
   top: 1.5em;
   border: 2px solid black;
